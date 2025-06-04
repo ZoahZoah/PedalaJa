@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - PedalaJá</title>
+    <link rel="icon" type="image/png" href="~/images/bike.png" />
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Suporte</h1>
+
+        <p>Bem-vindo à nossa página de Suporte! Estamos aqui para ajudar você com quaisquer questões ou dificuldades que possa estar enfrentando ao utilizar o nosso serviço PedalaJá. Abaixo, você encontrará informações detalhadas sobre como usar a aplicação, além de algumas das perguntas mais frequentes (FAQ) e um espaço para entrar em contato conosco diretamente.</p>
+
+        <h2>Como Usar o PedalaJá</h2>
+        <p>O PedalaJá foi criado para facilitar sua busca por bicicletas disponíveis em pontos estratégicos da cidade. Para começar, basta acessar a nossa página inicial, onde você pode visualizar todas as estações de bicicletas próximas à sua localização. Você também pode procurar por estações específicas, ou filtrar as que têm bicicletas disponíveis. Se precisar de mais detalhes sobre como usar a interface, aqui estão alguns passos para começar:</p>
+        <ul>
+            <li><strong>Abrir o aplicativo</strong>: Permita o acesso à sua localização para visualizar as estações mais próximas.</li>
+            <li><strong>Selecionar uma estação</strong>: Veja a quantidade de bicicletas disponíveis e a quantidade de slots vazios ao clicar em uma estação no mapa.</li>
+            <li><strong>Filtrar por estação</strong>: Se necessário, use a função de busca para encontrar estações específicas por nome ou região.</li>
+        </ul>
+
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <p>Abaixo estão algumas das perguntas mais comuns que recebemos dos nossos usuários. Se sua dúvida não estiver listada, entre em contato conosco.</p>
+        <ul>
+            <li><strong>Como eu sei se uma bicicleta está disponível?</strong><br>Você pode visualizar a quantidade de bicicletas disponíveis em cada estação ao selecionar o ponto de interesse no mapa ou na lista de estações.</li>
+            <li><strong>O que fazer se a bicicleta não funcionar?</strong><br>Caso você encontre algum problema com a bicicleta, entre em contato conosco para registrar a falha e, se necessário, substituí-la.</li>
+            <li><strong>Posso usar o PedalaJá em qualquer cidade?</strong><br>No momento, estamos disponíveis apenas em Sorocaba, mas em breve expandiremos para outras cidades. Fique ligado nas atualizações!</li>
+        </ul>
+
+        <h2>Entre em Contato</h2>
+        <p>Se você precisar de ajuda adicional, não hesite em entrar em contato. Estarei à disposição para responder a todas as suas perguntas. Me contate através do meu Github: <a href="https://github.com/Guterw/" class="btn">Luccas da Silva (Github name: Guterw)</a> ou entre em contato via redes sociais.</p>
+
+        <div class="developer-info">
+            <h3>Sobre o Desenvolvedor</h3>
+            <p>Este projeto foi desenvolvido por <strong>Luccas da Silva</strong> em conjunto do Grupo 24, como parte da <span class="highlight">Usina de Aprendizagem de Projetos no Quinto Semestre</span> de <strong>Análise e Desenvolvimento de Sistemas</strong> da <strong>Faculdade de Engenharia de Sorocaba - Facens</strong>.</p>
+            <p>Você pode acessar o código-fonte do projeto no meu repositório do GitHub: <a href="https://github.com/Guterw/PedalaJa" target="_blank">https://github.com/Guterw/PedalaJa</a></p>
+        </div>
+
+        <p>Se preferir, nos contate através do nosso suporte via WhatsApp:</p>
+            <br>
+            <a id="whatsapp" href="https://wa.me/5511931004219">
+                <i class="fab fa-whatsapp"></i>
+                <p>Ivan Mendonça</p>
+            </a>
+            <div id="redes-sociais">
+                <p>Nos siga em nossas redes sociais:</p>
+                <div id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>PedalaJá</p>
+                </div>
+                <div id="xwitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <p>PedalaJá</p>
+                </div>
+            </div>
+
+        <footer>
+            <p>Obrigado por usar o PedalaJá! Se precisar de mais assistência, não hesite em nos procurar.</p>
+        </footer>
+    </div>
+
+    <a href="{% url 'home' %}"><button class="btn btn-secondary">Voltar</button></a>
+
+    <!-- Estilos -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 200vh; /* Adicionado para estender até o final da página */
+        }
+
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #FF6F00;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #FF6F00;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+            ul li {
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+                text-align: justify;
+            }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #FF6F00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+            .btn:hover {
+                background-color: #ff4500;
+            }
+
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #888;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .developer-info {
+            margin-top: 40px;
+            font-size: 1.1rem;
+            text-align: left;
+            color: #333;
+            width: 100%;
+        }
+
+            .developer-info a {
+                color: #FF6F00;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .developer-info a:hover {
+                    text-decoration: underline;
+                }
+
+        .highlight {
+            background-color: #FF6F00;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        #whatsapp {
+            display: flex;
+            align-items: center;
+            text-decoration: none; /* remove o sublinhado do link */
+            color: #25D366; /* cor típica do WhatsApp */
+            margin-top: 10px;
+        }
+
+        #whatsapp i {
+            font-size: 32px; /* tamanho razoável */
+            margin-right: 10px; /* espaço entre ícone e texto */
+        }
+
+        #whatsapp p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        #redes-sociais {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+
+        #redes-sociais p {
+            margin: 0 0 10px 0;
+        }
+
+        #redes-sociais div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #redes-sociais i {
+            font-size: 32px; /* tamanho razoável */
+            margin-right: 10px; /* espaço entre ícone e texto */
+            color: #333; /* cor neutra, pode mudar */
+        }
+
+        #redes-sociais p {
+            font-size: 18px;
+        }
+
+        
+    </style>
+</body>
+</html>

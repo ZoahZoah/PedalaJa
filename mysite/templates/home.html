@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalaJá</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}?v=5"> <link rel="icon" type="image/png" href="{% static 'images/bike.png' %}" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>PedalaJá</h1>
+            <div class="buttons">
+                <a class="btn primary" href="{% url 'rota_para_estacao' %}">LocalizaJá</a>
+                <a class="btn secondary" href="{% url 'suporte' %}">Suporte</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="orange-bg"></div>
+            <img src="{% static 'images/unnamed.png' %}" alt="Bicicleta" class="bike">
+        </div>
+    </div>
+</body>
+</html>

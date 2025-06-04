@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+    @media (min-width: 769px) {
+    .container {
+        background-color: rgb(240, 89, 34);
+
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 99%;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+
+    .forms {
+        flex: 30%;
+        min-width: 400px;
+    }
+
+    .forms > h1 {
+        margin: 2rem auto 3rem;
+        display: block;
+        font-size: 7rem;
+        font-weight: bolder;
+        width: fit-content;
+        border: solid 2px #000;
+        padding: 2rem;
+        border-radius: 30px;
+        color: #FFFF;
+        -webkit-text-stroke: 2px #000;
+    }
+
+    form label {
+        display: block;
+        width: fit-content;
+        margin: 0 0 1rem 4.5rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        justify-items: center;
+        margin-top: 1rem;
+    }
+
+
+    .forms-control {
+        margin: auto;
+        display: flex;
+        padding: 0.5rem;
+        justify-content: center;
+        align-content: center;
+        font-size: 1rem;
+        line-height: 1.15rem;
+        border: 1px solid;
+        border-radius: 5px;
+        width: 70%;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(125, 66, 181);
+        flex: 40%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: start;
+        height: auto;
+        border-radius: 30px;
+        padding-top: 2rem;
+        padding: 2rem 1rem 2rem;
+        color: white;
+        line-height: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .contatos {
+        -webkit-text-stroke: 0.01rem #000;
+    }
+
+    #bicycle {  
+        width: 80%;
+        object-fit: cover;
+    }
+
+    #whatsapp {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        text-decoration: none;
+        color: #f4f4f4;
+        transition-duration: 0.2s;
+    }
+
+    #whatsapp:hover {
+        transform: scale(1.2);
+        color: #4fce5d;
+    }
+
+    .fa-whatsapp {
+        font-size: 4rem;
+        color: #4fce5d;
+        font-weight: bolder;
+    }
+
+    #instagram {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        text-decoration: none;
+        color: #f4f4f4;
+        transition-duration: 0.2s;
+        justify-content: center;
+    }
+
+    .fa-instagram {
+        font-size: 4rem;
+        font-weight: bolder;
+        background: linear-gradient(
+            45deg,
+            #833ab4,  /* Roxo */
+            #e1306c,  /* Rosa */
+            #fcaF45    /* Laranja */
+        );
+
+        -webkit-background-clip: text; /* Para navegadores WebKit */
+        background-clip: text; /* Aplica o gradiente ao ícone */
+        -webkit-text-fill-color: transparent; /* Remove a cor branca original */
+        color: transparent; /* Fallback para outros navegadores */
+    }
+
+    #instagram:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        background: linear-gradient(
+            45deg,
+            #833ab4,  /* Roxo */
+            #e1306c,  /* Rosa */
+            #fcaF45    /* Laranja */
+        );
+
+        -webkit-background-clip: text; /* Para navegadores WebKit */
+        background-clip: text; /* Aplica o gradiente ao ícone */
+        -webkit-text-fill-color: transparent; /* Remove a cor branca original */
+        color: transparent; /* Fallback para outros navegadores */
+    }
+
+    #xwitter {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        text-decoration: none;
+        color: #f4f4f4;
+        transition-duration: 0.2s;
+        justify-content: center;
+    }
+
+    #xwitter:hover {
+        transform: scale(1.2);
+        color: #000;
+    }
+
+    .fa-x-twitter {
+        font-size: 4rem;
+        color: #000;
+        font-weight: bolder;
+    }
+
+    #logo {
+        padding-top: 1rem;
+        width: 12rem;
+        object-fit: cover;
+    }
+
+    .ads {
+        flex: 30%;
+        min-width: 400px;
+        padding: 2rem;
+        margin-right: 5rem;
+    }   
+
+    .ads > h1 {
+        margin: 2rem 3rem 1rem;
+        display: block;
+        font-size: 7rem;
+        font-weight: bolder;
+        width: fit-content;
+        border: solid 2px #000;
+        padding: 2rem;
+        border-radius: 30px;
+        color: #FFFF;
+        -webkit-text-stroke: 2px #000;
+    }
+
+    .image-ads {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    .image-ads:hover {
+        transform: scale(2);
+    }
+
+    .video-ads {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar bicicletário</title>
+</head>
+<style>
+    /* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FF6A00;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #FF6A00;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #FF6A00;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+button.btn {
+    background-color: #FF6A00;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #e55b00;
+}
+
+a.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-secondary:hover {
+    background-color: #555;
+}
+
+/* Responsividade para telas menores que 767px */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    button.btn, 
+    a.btn-secondary {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+</style>
+<body>
+<div class="container mt-4">
+    <h2>Avaliar Bicicletário: {{ bicicletario.name }}</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.value.id_for_label }}">Nota:</label>
+            {{ form.value }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.comment.id_for_label }}">Comentário (opcional):</label>
+            {{ form.comment }}
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+        <a href="{% url 'rota_para_estacao' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+</body>
+</html>
